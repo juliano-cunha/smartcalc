@@ -1,0 +1,28 @@
+                           /* header */
+
+.header__result{
+    background-image: url("../../img/result_bg.png");
+    background-size: cover;
+    width: 500px;
+    height: 20%;                    
+}
+
+.header__text{
+    color: #f9f9f9;
+    font-family: Roboto, sans;
+    font-size: 40px;
+    font-weight: 300;
+    padding: 3rem;
+}
+
+    /* responsividade */
+    @media screen and (max-width: 768px) {       
+        .header__result{
+            background: #5e0de0;
+            width: 100%;
+            
+        }
+        .header__text{
+            text-align: center;
+        }
+    }

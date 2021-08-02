@@ -1,0 +1,132 @@
+                                        /* section  */
+.contentContainer{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.content__form{
+    width: 40%;
+}
+.form{
+    display: flex;
+    flex-direction: column;  
+}
+.form__group{
+    display: flex;
+    flex-direction: row;
+    margin-top: 2rem;
+    justify-content: space-between;
+    align-items: center;
+
+}
+.form__label__container{
+    margin-left: 10%;
+}
+.form__label{
+    color: #ffffff;
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+    
+}
+.form__input__container{
+    min-width: 50%;
+    margin-right: 10%;
+}
+
+.form__input{
+   width: 100%;
+   height: 2rem;
+   font-family: 'Roboto', sans-serif;
+   padding: 5px;
+   border: 1px solid #ffffff;
+   border-radius: 5px;
+}
+                                        /* select e radio */
+.form__label-radio{
+    color: #ffffff;
+    font-weight: 700;
+    font-size: 18px;
+   
+}
+.form__input-radio{
+    height: 1rem;
+    width: 1rem;
+    margin-left: 2rem;
+}
+.form__radio__container{
+    display: flex;
+    justify-content: space-around;
+}
+.form__input-select{
+    width: 100%;
+    height: 2rem;
+    border: 1px solid #ffffff;
+    border-radius: 5px;
+}
+.select__option{
+    background-color: #ffffff;
+}
+
+                                            /* botao */
+.form__button__container{
+   margin-top: 2rem;
+   margin-right: 10%;
+   display: flex;
+   justify-content: flex-end;
+
+}
+.form__button{
+    background-color: #F12711;
+    border: 1px solid #F12711;
+    border-radius: 5px;
+    color: #ffffff;
+    font-family: Roboto, sans-serif;
+    font-size: 24px;
+    font-weight: 700;
+    width: 30%;
+    padding: 1rem 2rem;
+    transition-duration: 0.4s;
+}
+.form__button:hover{
+    background-color: #da230f;
+    border: 1px solid #da230f;
+    cursor: pointer;
+}
+
+                                            /* aside */
+
+.content__image{
+    margin-left: 5rem;
+}
+
+                            
+                                        /* responsividade */
+
+
+@media screen and (max-width: 1280px) {
+    
+    .content__image{
+        display: none;
+    }
+    .content__form{
+        flex-grow: 1;
+        justify-content: space-around;
+        align-items: center;
+    }
+    .form__button__container{
+        justify-content: center;
+    }
+}
+@media screen and (max-width: 768px) {
+    .contentContainer{
+        flex-grow: 1;
+    }
+   
+   .form__button__container{
+       margin: 1rem;
+   }
+   .form__button{
+       width: 100%;
+   }
+}

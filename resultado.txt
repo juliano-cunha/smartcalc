@@ -1,0 +1,23 @@
+	provento = saldo de salario / ref = endDate.getDate() - OK (falta a ref data)
+
+	aviso previo indenizado = paidEarlyWarning / ref = warningDays - OK - OK (falta a ref data)
+
+	13º Salário Proporcional = bonus / ref endDate.getMonth() - OK (falta a ref data)
+
+	13º Salário Aviso Previo = ? / ref ?
+
+	Férias vencidas = expiredVacation / ref = 0 ou 1 (se tiver marcado é 1 senão é 0) - quase OK (falta a ref data)
+
+	Férias proporcionais = proportionalVacation / ref diffMonths - quase OK (falta a ref data)
+
+	Férias sobre aviso prévio = ? / ref = ?
+
+	1/3 Férias = ? / ref= ? (já calculado junto com as férias vencidas)
+
+inss saldo salário = salaryDescount / ref 7.5% - OK (se sobrar tempo eu ajusto isso)
+
+	inss aviso Prévio = earlyWarningDescount / ref 12% - OK
+
+	inss 13 Salário = bonusDescount / ref 7.5% - OK
+
+		Total = provento = result.total / desconto = descounts.totalDescount - OK

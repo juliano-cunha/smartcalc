@@ -1,0 +1,20 @@
+.banner__image{
+   height: 100%;
+   width: 65vw;
+    background-image: url("../../../assets/img/front.png");
+    background-size: cover;
+}
+  /* screen pequena/media */
+    /* mobile */
+    @media screen and (max-width: 1280px) {
+        .banner__image{
+            transition-duration: 0.5ms;
+            width: 50vw;
+        }
+    }
+    @media screen and (max-width: 768px) {
+        .banner__image{
+            display: none;
+        }
+      
+    }

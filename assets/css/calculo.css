@@ -1,0 +1,16 @@
+/* geral */
+select, input{
+    box-sizing: border-box;
+  }
+
+.pageContainer{
+    height: 100vh;
+     background-image: url("../img/Background.jpg");
+     background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+
+

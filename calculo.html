@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SmartCalcWork</title>
+
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet"> 
+    <!-- custom css -->
+    <link rel="stylesheet" href="./assets/css/reset.css">
+    <link rel="stylesheet" href="./assets/css/calculo.css">
+    <link rel="stylesheet" href="./assets/css/calculo/header-calculo.css">
+    <link rel="stylesheet" href="./assets/css/calculo/content-calculo.css">
+    <link rel="stylesheet" href="./assets/css/footer/footer.css">
+</head>
+<body>
+    <div class="pageContainer">
+        <header class="header">
+            <h1 class="header__title">Cálculo de Rescisão do contrato de Trabalho</h1>
+        </header>
+
+        <div class="contentContainer">    
+        <section class="content__form">
+            <form class="form" id="formCalc">
+
+                <div class="form__group">
+                    <div class="form__label__container">
+                        <label class="form__label" for="dateStart">Data Início</label>
+                    </div>
+                    <div class="form__input__container">
+                        <input class="form__input" type="date" name="dateStart" required>
+                    </div>
+                </div>
+                
+                
+                <div class="form__group">
+                    <div class="form__label__container">
+                        <label class="form__label" for="dateEnd" class="form__input">Data Término</label>
+                    </div>
+                    <div class="form__input__container">
+                        <input class="form__input" type="date" name="dateEnd" required>
+                    </div>
+                </div>
+                
+                
+                <div class="form__group">
+                    <div class="form__label__container">
+                        <label class="form__label" for="lastPaycheck" class="form__input">Último salário</label>
+                    </div>
+                    <div class="form__input__container">
+                        <input class="form__input" type="number" name="lastPaycheck" placeholder="0.00R$" required>
+                    </div>
+                </div>
+                
+                <div class="form__group">
+                    <div class="form__label__container">
+                        
+                        <label class="form__label" for="reliant" class="form__input">Número de dependentes</label>
+                    </div>
+                    <div class="form__input__container">
+                        <input class="form__input" type="number" name="reliant" placeholder="0">
+                    </div>
+                </div>
+
+                <div class="form__group">
+                    <div class="form__label__container">
+                        <label class="form__label" for="layoffReason" class="form__input">Motivo do término de contrato</label>
+                    </div>
+                    <div class="form__input__container">
+                        <select class="form__input-select" name="layoffReason">
+                            <option class="select__option" value="pedidoDemissao">Pedido de demissão</option>
+                            <option class="select__option" value="demissaoJustaCausa">Demissão com justa causa</option>
+                            <option class="select__option" value="demissaoComum">Demissão sem justa causa</option>
+                        </select> 
+                    </div>
+                </div>
+
+                <div class="form__group">
+                    <div class="form__label__container">
+                        <p class="form__label">Você possui férias vencidas?</p>
+                    </div>
+                    <div class="form__input__container"> 
+                        <div class="form__radio__container">
+                            <div class="radio_container">
+                                <input class="form__input-radio" type="radio" name="optExpiredVacation" value="optExpiredVacationYes">
+                                <label class="form__label-radio" for="optExpiredVacationYes">SIM</label>
+
+                                <input class="form__input-radio" type="radio" name="optExpiredVacation" value="optExpiredVacationNo">
+                                <label class="form__label-radio" for="optExpiredVacationNo">NÃO</label>
+                            </div>
+                        </div>
+                    </div>
+            </div>
+
+                <div class="form__group">
+                        <div class="form__label__container">
+                            <p class="form__label">Você cumpriu aviso prévio?</p>
+                        </div>
+                        <div class="form__input__container"> 
+                            <div class="form__radio__container">
+                                <div class="radio_container">
+                                    <input class="form__input-radio" type="radio" name="optEarlyWarning" value="optEarlyWarningYes">
+                                    <label class="form__label-radio" for="optEarlyWarningYes">SIM</label>
+                                    <input class="form__input-radio" type="radio" name="optEarlyWarning" value="optEarlyWarningNo">
+                                    <label class="form__label-radio" for="optEarlyWarningNo">NÃO</label>
+                                </div>
+                            </div>
+                        </div>
+                </div>
+                
+                
+                <div class="form__button__container">
+                    <button class="form__button" type="button" id="btnCalculate">Calcular</button>
+                </div>
+                 
+
+            </form>
+
+        </section>
+        <!-- aside -->
+        <section class="content__aside">
+            <img class="content__image" src="./assets/img/Calculator_Isometric 1.png" alt="logo calculadora">
+        </section>
+        </div>
+        <footer class="footer">
+            <a href="./index.html"><div class="footer__elipse"></div></a>
+            <a href="./calculo.html"><div class="footer__elipse active"></div></a>
+            <a href="./resultado.html"><div class="footer__elipse"></div></a>
+        </footer>
+    </div>
+    
+    <!-------------------------------------------Jquery --------------------------------------------------->
+    <script src="./js/libs/jquery.js"></script>
+    <!-------------------------------------------Javascript ----------------------------------------------->
+    <script type="module" src="./js/main.js"></script>
+</body>
+</html>

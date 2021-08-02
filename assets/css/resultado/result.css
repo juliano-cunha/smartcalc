@@ -1,0 +1,70 @@
+                            /* result */
+.result{
+    display: flex;
+    flex-direction: column;
+    height: 70%;
+    justify-content: space-around;
+    align-items: center;
+}
+.result__title{
+    color: #4A00E0;
+    font-family: Roboto, sans;
+    font-size: 36px;
+}
+.result__text{
+    color: #4A00E0;
+    font-family: Roboto, sans;
+    font-size: 45px;
+    font-weight: bold;
+}
+.result__details{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+.result__sideImage{
+    background-image: url("../../img/online_payment_bg.png") ;
+    width: 400px;
+    height: 300px;
+}
+.result__btn{
+    background-color: #F12711;
+    border: 1px solid #F12711;
+    border-radius: 5px;
+    color: #ffffff;
+    font-family: Roboto, sans-serif;
+    font-size: 24px;
+    font-weight: 700;
+    width: 100%;
+    padding: 1rem 2rem;
+    transition-duration: 0.4s;
+}
+.result__btn:hover{
+    background-color: #da230f;
+    border: 1px solid #da230f;
+    cursor: pointer;
+}
+
+
+
+/* responsividade */
+@media screen and (max-width: 1280px) {
+    .result__title{
+        font-size: 28px;
+        text-align: center;
+    }
+
+    .result__text{
+        font-size: 26px;
+    }
+ 
+}
+@media screen and (max-width: 768px) {
+    
+    .result__title{
+        font-size: 20px;
+        text-align: center;
+    }
+
+}

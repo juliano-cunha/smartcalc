@@ -1,0 +1,31 @@
+                            /* page */
+.container{
+    display: flex;
+    justify-content: space-between;
+    height:100vh ;
+}
+
+                            /* Principal */
+.principal{
+    flex-grow: 1;
+}
+
+                            /* aside */
+
+.side__img{
+    width: 100%;
+    height: 100%;
+}
+.invisivel{
+    display: none;
+}
+@media screen and (max-width: 768px) {
+    .principal{
+        flex-grow: 1;
+    }
+    
+    .side__img{
+        display: none;
+    }
+
+}

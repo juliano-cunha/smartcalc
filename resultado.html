@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SmartCalcWork</title>
+
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet"> 
+    <!-- custom css -->
+    <link rel="stylesheet" href="./assets/css/reset.css">
+    <link rel="stylesheet" href="./assets/css/resultado.css">
+    <link rel="stylesheet" href="./assets/css/resultado/header-resultado.css">
+    <link rel="stylesheet" href="./assets/css/resultado/result.css">
+    <link rel="stylesheet" href="./assets/css/footer/footer.css">
+   
+</head>
+<body>
+    <div class="container">
+
+        <div class="principal">
+                        <!-- cabeçalho -->
+            <div class="header__result">
+                <h1 class="header__text">Resultado</h1> 
+            </div>           
+                        <!-- principal -->
+            <section class="result">   
+                <div class="result__title__container">
+                    <h3 class="result__title">O valor líquido (depois dos descontos) da sua rescisão é de:</h3>
+                </div> 
+                <div class="result__text__container">
+                    <p class="result__text" id="totalResult">R$ 592,76</p>
+                </div>
+                <div class="result__details">
+                    <div class="result__btn__container">
+                        <a href="./resultado-detalhado.html"><button class="result__btn">Ver mais detalhes</button></a>
+                        <div class="result__sideImage"></div>
+                    </div>
+                        
+                </div>     
+            </section>
+
+                         <!-- Footer -->
+            <footer class="footer">
+                <a href="./index.html"><div class="footer__elipse"></div></a>
+                <a href="./calculo.html"><div class="footer__elipse"></div></a>
+                <a href="./resultado.html"><div class="footer__elipse active"></div></a>
+            </footer>
+        </div>
+                        <!-- Imagem ao lado -->
+        
+                             
+        <div class="aside">
+            <img class="side__img" src="./assets/img/side_bg.png" alt="">
+        </div>
+
+                    
+  <!-------------------------------------------Javascript ----------------------------------------------->                   
+        <script type="module" src="./js/result.js"></script>
+</div>
+</body>
+</html>

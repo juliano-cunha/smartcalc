@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SmartCalcWork</title>
+
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet"> 
+    <!-- custom css -->
+    <link rel="stylesheet" href="./assets/css/reset.css">
+    <link rel="stylesheet" href="./assets/css/resultado.css">
+    <link rel="stylesheet" href="./assets/css/resultado/result-detail.css">
+    <link rel="stylesheet" href="./assets/css/resultado/header-resultado.css">
+    <link rel="stylesheet" href="./assets/css/footer/footer.css">
+</head>
+<body>
+    <div class="container">
+
+        <div class="principal">
+                        <!-- cabeçalho -->
+            <div class="header__result">
+                <h1 class="header__text">Resultado detalhado</h1> 
+            </div>           
+                        <!-- principal -->
+            <section class="result">
+              <div class="detail">
+                <ul class="detail__title">
+                  <li class="detail__list">EVENTO</li>
+                  <li class="detail__list">REF.</li>
+                  <li class="detail__list">PROVENTO</li>
+                  <li class="detail__list">DESCONTO</li>
+                </ul>
+
+                <ul class="detail__text">
+                  <li class="detail__list">Saldo de Salário</li>
+                  <li class="detail__list" id="salaryRefMonths">-</li>
+                  <li class="detail__list" id="saldo_salario">-</li>
+                  <li class="detail__list">-</li>
+                </ul>
+
+                <ul class="detail__text">
+                  <li class="detail__list">Aviso Prévio Indenizado</li>
+                  <li class="detail__list" id="earlyWarningRef">-</li>
+                  <li class="detail__list" id="earlyWarningSalary">-</li>
+                  <li class="detail__list">-</li>
+                </ul>
+
+                <ul class="detail__text">
+                  <li class="detail__list">13º Salário Proporcional</li>
+                  <li class="detail__list" id="bonusSalaryRef">-</li>
+                  <li class="detail__list" id="bonusSalary">-</li>
+                  <li class="detail__list">-</li>
+                </ul>
+
+                <ul class="detail__text">
+                  <li class="detail__list">13º Salário Aviso Prévio</li>
+                  <li class="detail__list" id="thirteenthSalaryEarlyWarningRef">-</li>
+                  <li class="detail__list" id="thirteenthSalaryEarlyWarning">-</li>
+                  <li class="detail__list">-</li>
+                </ul>
+
+                <ul class="detail__text">
+                  <li class="detail__list">Férias Vencidas</li>
+                  <li class="detail__list" id="expiredVacationRef">-</li>
+                  <li class="detail__list" id="expiredVacation">-</li>
+                  <li class="detail__list">-</li>
+                </ul>
+
+                <ul class="detail__text">
+                  <li class="detail__list">Férias Proporcionais</li>
+                  <li class="detail__list" id="proportionalVacationRef">-</li>
+                  <li class="detail__list" id="proportionalVacation">-</li>
+                  <li class="detail__list">-</li>
+                </ul>
+
+                <ul class="detail__text">
+                  <li class="detail__list">Férias sobre aviso prévio</li>
+                  <li class="detail__list" id="vacationEarlyWarningRef">-</li>
+                  <li class="detail__list" id="vacationEarlyWarning">-</li>
+                  <li class="detail__list">-</li>
+                </ul>
+
+                <!-- já incluso no calculo das férias vencidas
+                <ul class="detail__text">
+                  <li class="detail__list">1/3 Férias</li>
+                  <li class="detail__list">-</li>
+                  <li class="detail__list">R$ 27,78</li>
+                  <li class="detail__list">-</li>
+                </ul> -->
+
+                <ul class="detail__text">
+                  <li class="detail__list">INSS Salário*</li>
+                  <li class="detail__list">7.5%</li>
+                  <li class="detail__list">-</li>
+                  <li class="detail__list" id="inssDescount">-</li>
+                </ul>
+                
+                <ul class="detail__text">
+                  <li class="detail__list">INSS aviso prévio</li>
+                  <li class="detail__list">12%</li>
+                  <li class="detail__list">-</li>
+                  <li class="detail__list" id="inssEarlyWarning">-</li>
+                </ul>
+
+                <ul class="detail__text">
+                  <li class="detail__list">INSS 13º Salário*</li>
+                  <li class="detail__list">7.5%</li>
+                  <li class="detail__list">-</li>
+                  <li class="detail__list" id="inssBonusDescount">R$ 0</li>
+                </ul>
+
+                <ul class="detail__text total">
+                  <li class="detail__list">Total</li>
+                  <li class="detail__list">-</li>
+                  <li class="detail__list" id="totalLiquido">R$ 0</li>
+                  <li class="detail__list" id="totalDescontos">R$ 0</li>
+                </ul>
+
+              </div>
+            </section>
+            
+            <!-- Footer -->
+            <footer class="footer">
+                <a href="./index.html"><div class="footer__elipse"></div></a>
+                <a href="./calculo.html"><div class="footer__elipse"></div></a>
+                <a href="./resultado.html"><div class="footer__elipse active"></div></a>
+            </footer>
+        </div>
+                        <!-- Imagem ao lado -->
+        
+            
+        
+                        
+        <div class="aside">
+            <img class="side__img" src="./assets/img/side_bg.png" alt="">
+        </div>
+<!-------------------------------------------Jquery --------------------------------------------------->
+        <script src="./js/libs/jquery.js"></script>
+<!-------------------------------------------Javascript ----------------------------------------------->              
+        <script type="module" src="./js/result_detailed.js"></script>
+
+                    
+
+</div>
+</body>
+</html>

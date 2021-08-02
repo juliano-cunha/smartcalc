@@ -1,0 +1,26 @@
+Lógica dos cálculos
+
+10/01/2020
+
+10/02/2020
+
+2022 - 2020 = 2 * 12 = 24 (meses) - como calcular o mes e dia? quando é considerado o mes inteiro? a partir de qual dia? ou calcula com os dias?
+
+
+10/01/2020
+
+10/06/2020
+
+2020 - 2020 = 0 / 06 - 01 = 5
+
+10/10/2020
+
+10/06/2021
+
+2020 - 2020 = 0 / 06 - 01 = 5
+
+//logica dos meses
+24.258-24.250 = 8 meses
+
+01/01/2020 - 24.241
+01/11/2022 - 24.275

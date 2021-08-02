@@ -1,0 +1,24 @@
+/* cabeçalho */
+.header{
+    display: flex;
+    justify-content: center;
+}
+.header__title{
+    color: #f9f9f9;
+    font-family: 'Roboto', sans-serif;
+    font-size: 36px;
+    font-weight: 700;
+    margin-top: 5%;
+}
+
+    /* responsividade */
+    @media screen and (max-width: 1280px) {
+    
+    }
+
+    @media screen and (max-width: 768px) {
+        .header__title{
+            text-align: center;
+            font-size: 30px;
+        }
+    }
